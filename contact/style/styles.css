@@ -57,6 +57,7 @@ to {
 *::after {
 box-sizing: border-box;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-appearance: none;
 }
 
 /* Remove default margin */
@@ -194,7 +195,8 @@ body {
     border-radius: 50%;
     position: relative;
     isolation: isolate;
-    height: 28px;
+    height: 35px;
+    margin-right: 12px;
 }
 
 #theme-toggle svg {
@@ -371,8 +373,7 @@ main {
     gap: 30px;
 }
 
-.form-fields > * {
-    -webkit-appearance: none;
+.form-fields input {
     border-radius: 8px;
     height: 50px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
@@ -386,11 +387,11 @@ main {
     transition: 0.25s;
 }
 
-.content-container input::placeholder {
+.form-fields input::placeholder {
     color: var(--clr-secondary);
 }
 
-.content-container input:focus {
+.form-fields input:focus {
     border: 3px solid var(--clr-accent);
 }
 
@@ -399,10 +400,14 @@ main {
     gap: 20px;
 }
 
+
+
+
 .message {
     resize: vertical;
     border-radius: 8px;
     border: 3px solid transparent;
+    min-height: 70px;
     height: 200px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
     padding: 20px;
