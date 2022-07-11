@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <script src="https://kit.fontawesome.com/19e7aafad7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style/styles.css">
+        <script src="./scripts/nav-bar.js"></script>
+    </head>
+    <body class="light-theme">
+        <div class="page-container">
+            <header>
+                <div class="logo-container">
+                    <a href="index.html">JORGE</a>
+                </div>
+                <nav class="navigation-section">
+                    <a href="index.html">HOME</a>
+                    <a href="./about/">ABOUT</a>
+                    <a href="./contact/">CONTACT ME</a>
+                    <a href="./projects/">PROJECTS</a>
+                </nav>
+                <div class="left-header-section">
+                    <button id="theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 472.39 472.39">
+                            <g class="toggle-sun">
+                                <path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+                            </g>
+                            <g class="toggle-circle">
+                                <circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="navigation-buttons">
+                        <button onclick="nav()"><i class="fa-solid fa-bars fa-lg"></i></button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="main-name-container">
+                    <div class="main-name">Jorge Antón</div>
+                    <div class="small-description">My personal projects</div>
+                </div>
+                <!-- <div class="latest-categories">Latest categories:</div> -->
+                <div class="categories-container">
+                    <div class="hass-container">
+                        <img src="./images/ha.png">
+                        <div class="categorie-name">Home Assistant</div>
+                        <div class="categorie-description">The free and open-source software for home automation.</div>
+                    </div>
+                    <div class="blender-container">
+                        <img src="./images/blender-logo.png">
+                        <div class="categorie-name">Blender</div>
+                        <div class="categorie-description">The free and open-source 3D creation suite.</div>
+                    </div>
+                    <div class="linux-container">
+                        <img src="./images/linux.png">
+                        <div class="categorie-name">GNU / Linux</div>
+                        <div class="categorie-description">The Unix-like open-source operating system.</div>
+                    </div>
+                </div>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="ha-background"><img class="front-picture" src="./images/ha.png"></div>
+                        <h3 class="categorie-name">Home Assistant</h3>
+                        <div class="categorie-stats">
+                            <div class="author">
+                                <img class="small-picture" src="./images/gato1.jpg">
+                                <h6 class="author-name">Jorge Antón</h6>
+                            </div>
+                            <h6 class="post-number">5 posts</h6>
+                        </div>
+                        <div class="background"></div>
+                        <div class="section-button">See All</div>
+                    </div>
+                    <div class="card">
+                        <div class="blender-background"><img class="front-picture" src="./images/blender-logo.png"></div>
+                        <h3 class="categorie-name">Blender</h3>
+                        <div class="categorie-stats">
+                            <div class="author">
+                                <img class="small-picture" src="./images/gato1.jpg">
+                                <h6 class="author-name">Jorge Antón</h6>
+                            </div>
+                            <h6 class="post-number">6 posts</h6>
+                        </div>
+                        <div class="background"></div>
+                        <div class="section-button">See All</div>
+                    </div>
+                    <div class="card">
+                        <div class="linux-background"><img class="front-picture" src="./images/linux.png"></div>
+                        <h3 class="categorie-name">GNU / Linux</h3>
+                        <div class="categorie-stats">
+                            <div class="author">
+                                <img class="small-picture" src="./images/gato1.jpg">
+                                <h6 class="author-name">Jorge Antón</h6>
+                            </div>
+                            <h6 class="post-number">7 posts</h6>
+                        </div>
+                        <div class="background"></div>
+                        <div class="section-button">See All</div>
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+                <div class="social-media-container">
+                    <div class="twitter-container">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="youtube-container">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="instagram-container">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="linkedin-container">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="github-container">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="copyright-container">
+                    Designed & Crafted by <a href="about.html">Jorge Antón</a>  &#xA9; 2022
+                </div>
+            </footer>
+            
+            <div class="navbar-container">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house fa-2x"></i>
+                        </a>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <i class="fa-solid fa-address-card fa-2x"></i>
+                        </a>
+                        <a href="./about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="./contact">
+                            <i class="fa-solid fa-envelope fa-2x"></i>
+                        </a>
+                        <a href="./contact">CONTACT ME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="./scripts/theme-switcher.js"></script>
+    </body>
+    </html>
