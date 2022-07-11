@@ -202,11 +202,11 @@ color: var(--clr-foreground);
     font-size: 16px;
     color: var(--clr-secondary);
 }
-.latest-categories {
+.featured-categories {
   font-size: 28px;
   font-weight: 700;
-  /* text-decoration: underline; */
-  margin-inline: 20px;
+  margin-inline: 35px;
+  padding-inline: 20px;
 }
 
 body {
